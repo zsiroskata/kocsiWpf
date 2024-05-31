@@ -34,7 +34,6 @@ namespace kocsiWpf
 
 				kocsik.Add(new Kocsi(nev, tip, uz, ev, kep));
 			}
-
 			foreach (var item in kocsik)
 			{
 				kocsikLista.Items.Add(item.Nev);
@@ -50,27 +49,27 @@ namespace kocsiWpf
 			{
 				int index = kocsikLista.SelectedIndex;
 				NevLabel.Content = kocsik[index].Nev;
-				//kép
 				TipusLabel.Content = kocsik[index].Tipus;
 				uzemanyagLabel.Content = kocsik[index].Uzemanyag;
 				EvLabel.Content = kocsik[index].Ev;
 
-				Image finalImage = new();
+				Image kep = new();
 				string currentDirectory = Directory.GetCurrentDirectory();
-				finalImage.Source = new BitmapImage(new Uri(System.IO.Path.Combine(currentDirectory, $@"..\images\{kocsik[index].Kep}")));
+				kep.Source = new BitmapImage(new Uri(System.IO.Path.Combine(currentDirectory, $@"..\images\{kocsik[index].Kep}")));
 
 				images.Children.Clear(); 
-				images.Children.Add(finalImage);
+				images.Children.Add(kep);
 			}
 		}
 	
-			//- - T Ö R L É S - -
-			private void torles_Click(object sender, RoutedEventArgs e)
+		//- - T Ö R L É S - -
+		private void torles_Click_1(object sender, RoutedEventArgs e)
 		{
-            if (kocsikLista.SelectedItem != null)
-            {
-                kocsikLista.Items.Remove(kocsikLista.SelectedItem);
-            }
-        }
+			if (kocsikLista.SelectedItem != null)
+			{
+				int index = kocsikLista.SelectedIndex;
+				kocsikLista.Items.RemoveAt(index);
+			}
+		}
 	}
 }
