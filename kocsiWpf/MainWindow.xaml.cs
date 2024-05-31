@@ -48,27 +48,22 @@ namespace kocsiWpf
 		{
 			if (kocsikLista.SelectedItem != null)
 			{
-				update();
+				int index = kocsikLista.SelectedIndex;
+				NevLabel.Content = kocsik[index].Nev;
+				//kép
+				TipusLabel.Content = kocsik[index].Tipus;
+				uzemanyagLabel.Content = kocsik[index].Uzemanyag;
+				EvLabel.Content = kocsik[index].Ev;
+
+				Image finalImage = new();
+				string currentDirectory = Directory.GetCurrentDirectory();
+				finalImage.Source = new BitmapImage(new Uri(System.IO.Path.Combine(currentDirectory, $@"..\images\{kocsik[index].Kep}")));
+
+				images.Children.Clear(); 
+				images.Children.Add(finalImage);
 			}
 		}
-		private void update()
-		{
-            if (kocsikLista.SelectedItem != null)
-            {
-                foreach (var item in kocsik)
-                {
-					NevLabel.Content = item.Nev;
-					//név
-					//tipus
-					//üzemanyag
-					//évjárat
-					//kép
-					TipusLabel.Content = item.Tipus;
-					uzemanyagLabel.Content = item.Uzemanyag;
-					
-				}
-			}
-        }
+	
 			//- - T Ö R L É S - -
 			private void torles_Click(object sender, RoutedEventArgs e)
 		{

@@ -1,4 +1,4 @@
-BMW; X5; Dízel; 2023; bwm.jpg
+BMW; X5; Dízel; 2023; bmw.jpg
 Audi; A4; Benzin; 2022; audi.jpg
 Mercedes-Benz; C-Class; Hibrid; 2021; mercedes.jpg
 Tesla; Model 3; Elektromos; 2024; tesla.jpg
