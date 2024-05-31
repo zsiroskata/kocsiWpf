@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics.Metrics;
 using System.IO;
 using System.Text;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -10,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System;
 
 namespace kocsiWpf
 {
@@ -34,14 +36,13 @@ namespace kocsiWpf
 
 				kocsik.Add(new Kocsi(nev, tip, uz, ev, kep));
 			}
+		
 			foreach (var item in kocsik)
 			{
 				kocsikLista.Items.Add(item.Nev);
 			}
 
 			kocsikLista.SelectionChanged += change;
-
-
 		}
 		private void change(object sender, SelectionChangedEventArgs e)
 		{
@@ -69,7 +70,20 @@ namespace kocsiWpf
 			{
 				int index = kocsikLista.SelectedIndex;
 				kocsikLista.Items.RemoveAt(index);
+			
+				clear_Click( sender,  e);
 			}
+		}
+
+		//- - C L E A R - -
+		private void clear_Click(object sender, RoutedEventArgs e)
+		{
+			string s = string.Empty;
+			NevLabel.Content = s;
+			TipusLabel.Content = s;
+			uzemanyagLabel.Content = s;
+			EvLabel.Content = s;
+			images.Children.Clear();
 		}
 	}
 }

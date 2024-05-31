@@ -16,8 +16,9 @@
         <Label x:Name="TipusLabel" Content="" HorizontalAlignment="Left" Height="31" Margin="330,90,0,0" VerticalAlignment="Top" Width="95" Background="#FFFDEAEA"/>
         <Label x:Name="uzemanyagLabel" Content="" HorizontalAlignment="Left" Height="31" Margin="330,128,0,0" VerticalAlignment="Top" Width="95" Background="#FFFDEAEA"/>
         <Label x:Name="EvLabel" Content="" HorizontalAlignment="Left" Height="31" Margin="330,165,0,0" VerticalAlignment="Top" Width="95" Background="#FFFDEAEA"/>
-        <StackPanel x:Name="images" HorizontalAlignment="Left" Height="220" Margin="452,55,0,0" VerticalAlignment="Top" Width="335"/>
+        <StackPanel x:Name="images" HorizontalAlignment="Left" Height="220" Margin="441,52,0,0" VerticalAlignment="Top" Width="335"/>
         <Button x:Name="torles" Content="Törlés" HorizontalAlignment="Left" Height="55" Margin="60,245,0,0" VerticalAlignment="Top" Width="112" Background="#FFF3B4B4" Click="torles_Click_1"/>
+        <Button x:Name="clear" Content="Clear" HorizontalAlignment="Left" Height="55" Margin="266,245,0,0" VerticalAlignment="Top" Width="112" Background="#FFF3F3B4" Click="clear_Click"/>
 
 
     </Grid>
