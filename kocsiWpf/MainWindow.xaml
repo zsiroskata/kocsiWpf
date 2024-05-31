@@ -12,11 +12,13 @@
         <Label Content="Típus:" HorizontalAlignment="Left" Height="32" Margin="214,90,0,0" VerticalAlignment="Top" Width="93" HorizontalContentAlignment="Right" Background="#FFE8E8E8"/>
         <Label Content="Év:" HorizontalAlignment="Left" Height="32" Margin="214,164,0,0" VerticalAlignment="Top" Width="93" RenderTransformOrigin="0.527,2.47" HorizontalContentAlignment="Right" Background="#FFE8E8E8"/>
         <Label Content="Üzemanyag:" HorizontalAlignment="Left" Height="32" Margin="214,127,0,0" VerticalAlignment="Top" Width="93" RenderTransformOrigin="0.527,2.47" HorizontalContentAlignment="Right" Background="#FFE8E8E8"/>
-        <Label x:Name="Nev" Content="" HorizontalAlignment="Left" Height="31" Margin="330,54,0,0" VerticalAlignment="Top" Width="95" Background="#FFFDEAEA"/>
-        <Label x:Name="Tipus" Content="" HorizontalAlignment="Left" Height="31" Margin="330,90,0,0" VerticalAlignment="Top" Width="95" Background="#FFFDEAEA"/>
-        <Label x:Name="uzemanyag" Content="" HorizontalAlignment="Left" Height="31" Margin="330,128,0,0" VerticalAlignment="Top" Width="95" Background="#FFFDEAEA"/>
-        <Label x:Name="ev" Content="" HorizontalAlignment="Left" Height="31" Margin="330,165,0,0" VerticalAlignment="Top" Width="95" Background="#FFFDEAEA"/>
-        <Image x:Name="img" HorizontalAlignment="Left" Height="163" Margin="523,54,0,0" VerticalAlignment="Top" Width="257"/>
+        <Label x:Name="NevLabel" Content="" HorizontalAlignment="Left" Height="31" Margin="330,54,0,0" VerticalAlignment="Top" Width="95" Background="#FFFDEAEA"/>
+        <Label x:Name="TipusLabel" Content="" HorizontalAlignment="Left" Height="31" Margin="330,90,0,0" VerticalAlignment="Top" Width="95" Background="#FFFDEAEA"/>
+        <Label x:Name="uzemanyagLabel" Content="" HorizontalAlignment="Left" Height="31" Margin="330,128,0,0" VerticalAlignment="Top" Width="95" Background="#FFFDEAEA"/>
+        <Label x:Name="EvLabel" Content="" HorizontalAlignment="Left" Height="31" Margin="330,165,0,0" VerticalAlignment="Top" Width="95" Background="#FFFDEAEA"/>
+        <StackPanel x:Name="images" HorizontalAlignment="Left" Height="163" Margin="515,54,0,0" VerticalAlignment="Top" Width="244"/>
+        <Button x:Name="torles" Content="Törlés" HorizontalAlignment="Left" Height="55" Margin="51,217,0,0" VerticalAlignment="Top" Width="111" Background="#FFF3B4B4"/>
+
 
     </Grid>
 </Window>

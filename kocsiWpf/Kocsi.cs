@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
+using System.Xml.Linq;
 
 namespace kocsiWpf
 {
@@ -18,5 +20,13 @@ namespace kocsiWpf
         public int Ev { get; set; }
         //kép
         public string Kep { get; set; }
-    }
+		public Kocsi(string nev, string tipus, string uzemanyag, int ev, string source)
+		{
+			Nev = nev;
+			Tipus = tipus;
+			Uzemanyag = uzemanyag;
+			Ev = ev;
+			Kep = $@"..\..\..\images\{source}";
+		}
+	}
 }
