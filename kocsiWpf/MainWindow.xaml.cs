@@ -71,7 +71,8 @@ namespace kocsiWpf
 				int index = kocsikLista.SelectedIndex;
 				kocsikLista.Items.RemoveAt(index);
 			
-				clear_Click( sender,  e);
+				clear_Click(sender,  e);
+				kocsik.Remove(kocsik[index]);
 			}
 		}
 
