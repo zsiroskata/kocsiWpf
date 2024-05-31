@@ -4,7 +4,6 @@ Mercedes-Benz; C-Class; Hibrid; 2021; mercedes.jpg
 Tesla; Model 3; Elektromos; 2024; tesla.jpg
 Toyota; Corolla; Benzin; 2020; toyota.jpg
 Volkswagen; Passat; Dízel; 2019; volkswagen.jpg
-Ford; Mustang; Benzin; 2021; ford.jpg
 Honda; Civic; Benzin; 2022; honda.jpg
 Chevrolet; Malibu; Benzin; 2020; chevrolet.jpg
 Nissan; Leaf; Elektromos; 2023; nissan.jpg
